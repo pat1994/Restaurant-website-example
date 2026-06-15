@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mare — Fine Dining at the Water's Edge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#home" class="nav__logo">MARE</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#reserve" class="nav__cta">Reserve a Table</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero__overlay"></div>
+    <div class="hero__content fade-in">
+      <span class="hero__eyebrow">Waterfront Fine Dining</span>
+      <h1 class="hero__title">Where the Sea<br /><em>Meets the Table</em></h1>
+      <p class="hero__sub">Seasonal cuisine crafted by Chef Matteo Russo,<br />served at the water's edge.</p>
+      <a href="#reserve" class="btn btn--light">Reserve Your Evening</a>
+    </div>
+    <div class="hero__scroll">Scroll</div>
+  </section>
+
+  <!-- About -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__image fade-in">
+          <img
+            src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=800&q=80"
+            alt="Chef Matteo Russo"
+          />
+        </div>
+        <div class="about__text fade-in">
+          <span class="eyebrow">Our Story</span>
+          <h2>A Chef. A View. A Philosophy.</h2>
+          <p>
+            Chef Matteo Russo grew up along the Ligurian coast, where meals were slow, ingredients were honest, and the sea was always present. After years in Michelin-starred kitchens across Europe, he returned to the water to open Mare — a place where simplicity is the highest form of craft.
+          </p>
+          <p>
+            Every plate begins with what arrived that morning: fish pulled from local boats, vegetables from the hillside farms above the bay, herbs grown on our terrace. Nothing more, nothing less.
+          </p>
+          <a href="#menu" class="btn btn--outline">Explore the Menu</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="divider">
+    <span>✦</span>
+  </div>
+
+  <!-- Menu -->
+  <section class="menu section" id="menu">
+    <div class="container">
+      <div class="section__header fade-in">
+        <span class="eyebrow">Seasonal Menu</span>
+        <h2>The Kitchen Today</h2>
+        <p class="section__sub">Our menu changes with the tides and the seasons. What follows is a reflection of this week's finest.</p>
+      </div>
+
+      <div class="menu__grid">
+        <div class="menu__category fade-in">
+          <h3 class="menu__cat-title">Starters</h3>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <div class="menu__item-header">
+                <span class="menu__name">Crudo of Day Boat Scallop</span>
+                <span class="menu__price">€18</span>
+              </div>
+              <p class="menu__desc">Yuzu kosho, cucumber water, micro shiso</p>
+            </li>
+            <li class="menu__item">
+              <div class="menu__item-header">
+                <span class="menu__name">Burrata &amp; Heirloom Tomato</span>
+                <span class="menu__price">€16</span>
+              </div>
+              <p class="menu__desc">Cold-pressed olive oil, sea salt, wild basil</p>
+            </li>
+            <li class="menu__item">
+              <div class="menu__item-header">
+                <span class="menu__name">Smoked Bone Marrow</span>
+                <span class="menu__price">€17</span>
+              </div>
+              <p class="menu__desc">Grilled sourdough, anchovy butter, capers</p>
+            </li>
+            <li class="menu__item">
+              <div class="menu__item-header">
+                <span class="menu__name">Sea Urchin Linguine</span>
+                <span class="menu__price">€22</span>
+              </div>
+              <p class="menu__desc">Local ricci, bottarga, lemon zest</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="menu__category fade-in">
+          <h3 class="menu__cat-title">Mains</h3>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <div class="menu__item-header">
+                <span class="menu__name">Whole Roasted Sea Bass</span>
+                <span class="menu__price">€38</span>
+              </div>
+              <p class="menu__desc">Fennel, olives, saffron broth, sea herbs</p>
+            </li>
+            <li class="menu__item">
+              <div class="menu__item-header">
+                <span class="menu__name">Dry-Aged Duck Breast</span>
+                <span class="menu__price">€42</span>
+              </div>
+              <p class="menu__desc">Bigarade sauce, charred leek, black truffle</p>
+            </li>
+            <li class="menu__item">
+              <div class="menu__item-header">
+                <span class="menu__name">Handmade Pappardelle</span>
+                <span class="menu__price">€29</span>
+              </div>
+              <p class="menu__desc">Braised octopus ragù, 'nduja, crispy capers</p>
+            </li>
+            <li class="menu__item">
+              <div class="menu__item-header">
+                <span class="menu__name">A5 Wagyu Côte de Boeuf</span>
+                <span class="menu__price">€68</span>
+              </div>
+              <p class="menu__desc">Bone marrow butter, watercress, aged balsamic</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="menu__category fade-in">
+          <h3 class="menu__cat-title">Desserts</h3>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <div class="menu__item-header">
+                <span class="menu__name">Amalfi Lemon Tart</span>
+                <span class="menu__price">€13</span>
+              </div>
+              <p class="menu__desc">Torched Italian meringue, limoncello gel</p>
+            </li>
+            <li class="menu__item">
+              <div class="menu__item-header">
+                <span class="menu__name">Dark Chocolate Délice</span>
+                <span class="menu__price">€14</span>
+              </div>
+              <p class="menu__desc">Valrhona 70%, salted caramel, cocoa tuile</p>
+            </li>
+            <li class="menu__item">
+              <div class="menu__item-header">
+                <span class="menu__name">Seasonal Panna Cotta</span>
+                <span class="menu__price">€12</span>
+              </div>
+              <p class="menu__desc">Today's fruit compote, vanilla, honeycomb</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="menu__note fade-in">All dishes are prepared with locally sourced, seasonal ingredients. Please inform us of any dietary requirements.</p>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery section" id="gallery">
+    <div class="container">
+      <div class="section__header fade-in">
+        <span class="eyebrow">The Experience</span>
+        <h2>Life at the Water's Edge</h2>
+      </div>
+      <div class="gallery__grid">
+        <div class="gallery__item gallery__item--wide fade-in">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=80" alt="Waterfront dining" />
+        </div>
+        <div class="gallery__item fade-in">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80" alt="Fine dining plate" />
+        </div>
+        <div class="gallery__item fade-in">
+          <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=800&q=80" alt="Fresh seafood" />
+        </div>
+        <div class="gallery__item fade-in">
+          <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=800&q=80" alt="Restaurant interior" />
+        </div>
+        <div class="gallery__item fade-in">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80" alt="Chef's creation" />
+        </div>
+        <div class="gallery__item gallery__item--wide fade-in">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80" alt="Sunset over the water" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reservations -->
+  <section class="reserve section" id="reserve">
+    <div class="reserve__bg"></div>
+    <div class="container">
+      <div class="reserve__inner">
+        <div class="reserve__text fade-in">
+          <span class="eyebrow eyebrow--light">Reservations</span>
+          <h2>Join Us for an Evening</h2>
+          <p>We seat guests Tuesday through Sunday, from 6 PM until late. For large groups or special occasions, please contact us directly.</p>
+          <address>
+            <p>12 Harbour Walk, Marina District</p>
+            <p><a href="tel:+39012345678">+39 012 345 678</a></p>
+            <p><a href="mailto:hello@mare-restaurant.com">hello@mare-restaurant.com</a></p>
+          </address>
+        </div>
+        <form class="reserve__form fade-in" id="reserveForm">
+          <div class="form__row">
+            <div class="form__group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form__group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__group">
+              <label for="date">Date</label>
+              <input type="date" id="date" name="date" required />
+            </div>
+            <div class="form__group">
+              <label for="time">Time</label>
+              <select id="time" name="time" required>
+                <option value="" disabled selected>Select time</option>
+                <option>18:00</option>
+                <option>18:30</option>
+                <option>19:00</option>
+                <option>19:30</option>
+                <option>20:00</option>
+                <option>20:30</option>
+                <option>21:00</option>
+                <option>21:30</option>
+              </select>
+            </div>
+          </div>
+          <div class="form__group">
+            <label for="guests">Number of Guests</label>
+            <select id="guests" name="guests" required>
+              <option value="" disabled selected>Select guests</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7+</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label for="notes">Special Requests</label>
+            <textarea id="notes" name="notes" placeholder="Dietary requirements, celebrations, preferences…" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn--gold">Request Reservation</button>
+          <p class="form__note">We will confirm your reservation within 24 hours.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <span class="footer__logo">MARE</span>
+          <p>Fine dining at the water's edge.<br />12 Harbour Walk, Marina District.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Hours</h4>
+          <ul>
+            <li>Tuesday – Thursday: 18:00 – 22:30</li>
+            <li>Friday – Saturday: 18:00 – 23:00</li>
+            <li>Sunday: 12:00 – 15:00 / 18:00 – 22:00</li>
+            <li>Monday: Closed</li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Follow</h4>
+          <ul class="footer__social">
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Mare Restaurant. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
